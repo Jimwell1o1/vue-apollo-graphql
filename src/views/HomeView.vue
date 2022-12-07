@@ -24,7 +24,7 @@ import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
 import HeaderNav from '@/components/Header/HeaderNav.vue';
 import HeaderTop from '@/components/Header/HeaderTop.vue';
 import HeroItem from '@/components/Hero/HeroItem.vue';
-import LightSection from '@/components/Clothes/LightSection.vue';
+import LightSection from '@/components/Lights/LightSection.vue';
 import ContactItem from '@/components/Contact/ContactItem.vue';
 import FooterItem from '@/components/Footer/FooterItem.vue';
 
