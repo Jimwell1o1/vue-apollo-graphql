@@ -39,7 +39,7 @@
                         </div>
                         <div class="flex gap-x-2 w-full">
                             <input name="email" v-model="email" type="text" placeholder="Email" class="bg-gray-100 w-1/2 py-2 px-3 rounded-lg">
-                            <input name="contact" v-model="contact" type="text" placeholder="Contact" class="bg-gray-100 w-1/2 py-2 px-3 rounded-lg">
+                            <input name="contact" v-model="contact" type="text" placeholder="Contact Number" class="bg-gray-100 w-1/2 py-2 px-3 rounded-lg">
                         </div>
                         <input name="address" v-model="address" type="text" placeholder="Address" class="bg-gray-100 w-full py-2 px-3 rounded-lg">
                         <textarea name="message" v-model="message" placeholder="Your Message" cols="20" rows="7" class="bg-gray-100 w-full py-2 px-3 rounded-lg"></textarea>
@@ -76,13 +76,18 @@
                             <div>
                                 <p class="font-bold">Message successfully sent!</p>
                                 <p class="text-sm">Thank you for sending us your message.</p>
+                                <p class="mt-2">
+                                    <span class=" dark:bg-teal-200 text-gray-700 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">
+                                        <a href="/contact-list" class="text-blue-700 underline">Click here</a> to see list of Contact Messages
+                                    </span>
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            {{ sendMessageError?.graphQLErrors[0].extensions.validation }}
+            <!-- {{ sendMessageError?.graphQLErrors[0].extensions.validation }} -->
 
 
         </div>
