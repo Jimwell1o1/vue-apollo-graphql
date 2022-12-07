@@ -1,6 +1,6 @@
 # VueJS with vue apollo & typescript 	:rocket:
 #### In order to run this project, you need to install first the graphql server which is a laravel framework. 
-#### To install the [Laravel GraphQL Server Repository - Click here](https://pages.github.com/).
+#### To install the [Laravel GraphQL Server Repository - Click here](https://github.com/Jimwell1o1/laravel-graphql-server).
 
 ### Project setup
 ```
