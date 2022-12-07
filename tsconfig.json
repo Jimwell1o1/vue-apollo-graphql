@@ -26,16 +26,29 @@
       "dom",
       "dom.iterable",
       "scripthost"
-    ]
+    ],
+
+    //additional
+    "typeRoots": ["node_modules/@types", "src/@types"],
   },
+  
+  //additional
+  "files": ["src/@types/graphql.d.ts"],
+
   "include": [
     "src/**/*.ts",
     "src/**/*.tsx",
     "src/**/*.vue",
     "tests/**/*.ts",
-    "tests/**/*.tsx"
+    "tests/**/*.tsx",
+
+    //additional
+    "src/**/*"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+
+     //additional
+    "**/*.spec.ts"
   ]
 }

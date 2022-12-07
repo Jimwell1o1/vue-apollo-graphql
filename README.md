@@ -22,3 +22,5 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+npx tailwindcss -i ./src/assets/main.css -o ./src/assets/base.css --watch

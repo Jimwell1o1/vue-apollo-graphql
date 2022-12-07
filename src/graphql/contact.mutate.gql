@@ -1,0 +1,13 @@
+mutation {
+  createContact(
+    name: "Jimwell",
+    email: "rjohnjimwell@gmail.com",
+    contact: "0212313213132",
+    address: "21312 asdas 1322",
+    message: "sadasdas ad "
+  ) {
+    id
+    name
+
+  }
+}

@@ -1,0 +1,8 @@
+query LightsQuery{
+  lights {
+    id
+    product_name
+    file_path
+    price
+  }
+}

@@ -1,0 +1,8 @@
+query CategoriesQuery {
+    categories {
+        id
+        category_name
+        img_path
+        title
+  }
+}

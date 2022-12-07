@@ -1,0 +1,13 @@
+query ($category: String!){
+    lightCategories (category_name: $category) {
+    id
+		title
+    light {
+      id
+      price
+      file_path
+      product_name
+    }
+  }
+}
+
