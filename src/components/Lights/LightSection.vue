@@ -70,15 +70,12 @@
 </template>
 
 <script lang="ts" setup>
-    //import ClothesCard from '@/components/Clothes/ClothesCard.vue'
-
-    import { Vue } from 'vue-class-component';
     import { ref } from 'vue';
-    import { useQuery, useLazyQuery  } from '@vue/apollo-composable';
-    
+    import { useQuery } from '@vue/apollo-composable';
     import LightCategorized  from './LightCategorized.vue'
     import CategoriesQuery  from '../../graphql/categories.query.gql';
     import lightsQuery  from '../../graphql/lights.query.gql';
+
 
     const selectedCategory = ref('all');
     const { loading, result, error } = useQuery(CategoriesQuery);
@@ -91,6 +88,7 @@
             { loading: loading2, result: data2, error: error2},
         ] = queryMultiple()
 
+        
     function selectCategory(category: any) {
         selectedCategory.value = category
 
@@ -100,7 +98,5 @@
             selectedCategory.value = category
         }
     }
-
-    class HeaderNav extends Vue {}
 
 </script>

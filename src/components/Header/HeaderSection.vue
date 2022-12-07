@@ -11,12 +11,8 @@
     </header>
 </template>
 
-<script lang="ts">
+<script lang="ts" setup>
 import HeaderNav from './HeaderNav.vue';
 import HeaderTop from './HeaderTop.vue';
 
-// import { Vue } from 'vue-class-component';
-
-// export default class HeaderSection extends Vue {
-// }
 </script>

@@ -14,11 +14,4 @@
     </nav>
 </template>
 
-<script lang="ts">
-import { Vue } from 'vue-class-component';
-
-export default class HeaderNav extends Vue {
-  msg!: string
-}
-</script>
 

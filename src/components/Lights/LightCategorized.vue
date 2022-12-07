@@ -6,6 +6,7 @@
         </svg>
         <span class="sr-only">Loading...</span>
     </div>
+
     <div v-else-if="error" id="alert-5" class="flex p-4 m-5 bg-gray-100 rounded-lg dark:bg-gray-700 w-5/12" role="alert">
         <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-700 dark:text-gray-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
         <span class="sr-only">Info</span>
@@ -13,12 +14,14 @@
           Oops, something went wrong. Please try again later. {{ error.message }}
       </div>
     </div>
+
     <div v-else-if="result">
         <div v-for="light of result.lightCategories" :key="light.light.id" class="flex flex-wrap justify-center gap-5 max-w-7xl mb-20">
-            <!-- <h1 v-for="singleLight of light.light" :key="singleLight.id"></h1> -->
             <div v-for="singleLight of light.light" :key="singleLight.id" class="max-w-[18rem] h-full max-h-[405px] rounded-md overflow-hidden shadow-lg">
-                <img class="w-full" :src="`http://127.0.0.1:8000/images/products/${singleLight.file_path}`"
-                alt="Sunset in the mountains">              
+                <img class="w-full" 
+                    :src="`http://127.0.0.1:8000/images/products/${singleLight.file_path}`" 
+                    alt="Sunset in the mountains"
+                >              
                 <div class="px-4 pt-5">
                     <span class="inline-block pb-2 text-md font-semibold text-gray-700 mr-2">&#8369; {{ singleLight.price }}.00</span>
                 </div>
@@ -31,7 +34,6 @@
                 </div>
             </div> 
         </div>
-
     </div>
    
 </template>
@@ -54,5 +56,4 @@
         refetch({category: props.category})
     }, {deep: true}) 
 
-    class HeaderNav extends Vue { }
 </script>
